@@ -1,0 +1,24 @@
+#include  <iostream>
+using namespace std;
+class siswa
+void showprodi() {
+cout<<prodi;
+}
+
+};
+
+int main (){
+string pendidikan = "Pendidikan" ;
+cout<<pendidkikan;
+siswa budi{" = Teknik "};
+budi.showprodi();
+
+siswa  &refbudi  = budi;
+refbudi.prodi =  "= Informatika";
+budi.showprodi();
+
+siswa *pBudi = &budi;
+pBudi->prodi = "=Komputer";
+budi.showprodi();
+return 0;
+}
